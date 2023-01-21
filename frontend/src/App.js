@@ -8,8 +8,8 @@ function App() {
     return (
         <MainAppContextProvider>
             <div className="App">
-                <GraphComponent></GraphComponent>
-                {/*<HeatMapComponent></HeatMapComponent>*/}
+                <GraphComponent />
+                <HeatMapComponent />
             </div>
         </MainAppContextProvider>
     );

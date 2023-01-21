@@ -15,12 +15,12 @@ const HeatMapComponent = () => {
         heatmapInstance.repaint();
         // now generate some random data
         const points = [];
-        let max = 0;
 
         for (let i = 0; i < response.length; i++) {
+            console.log(response[i]);
             const point = {
-                x: response[i].x,
-                y: response[i].y,
+                x: response[i].timestamp / 10000,
+                y: response[i].UserInstanceCount,
             };
             points.push(point);
         }
